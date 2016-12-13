@@ -18,3 +18,15 @@ user2 = User.create!(
   password_confirmation: '123456'
 )
 
+post1 = Post.create!(
+  title: %Q(User1's post),
+  content: 'Post for User1',
+  user: user1
+)
+
+post2 = Post.create!(
+  title: %Q(User2's post),
+  content: 'Post for User2',
+  user: user2
+)
+
